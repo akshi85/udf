@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("create basic calculator using switch case. simple function use");
+
+        function calculation(d, k, input) {
+            switch (input) {
+                case "+":
+                    return d + k;
+                case "-":
+                    return d - k;
+                case "*":
+                    return d * k;
+                case "/":
+                    return d / k;
+            }
+        }
+
+        let d = 10;
+        let k = 5;
+        let operation = "+";
+        let sum = calculation(d, k, operation);
+
+        console.log("sum", d, operation, k, "=", sum);
+    </script>
+</body>
+
+</html>

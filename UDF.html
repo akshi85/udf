@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        console.log("check number positive and negetive. using simple function");
+        function positive(number) {
+            if (number > 0) {
+                console.log("Number Is Positive");
+                return number
+            }
+            else if (number == 0) {
+                console.log("Number Is Zero");
+                return number
+            }
+            else {
+                console.log("Number Is Negative");
+                return number
+            }
+        }
+        const num = prompt("Enter Your Number = ");
+        const result = positive(num);
+        console.log(result);
+    </script>
+</body>
+
+</html>

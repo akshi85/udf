@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("swapping of two variables. all function use");
+        function swapping(c, d) {
+            const temp = c;
+            c = d;
+            d = temp;
+            return [c, d];
+        }
+        let x = prompt("Enter Your Number = x");
+        let y = prompt("Enter Your Number = y");
+
+        console.log("Before Swapping: x =", x, "and y = ", y);
+
+        [x, y] = swapping(x, y);
+
+        console.log("Swapping: X = ", x, "and Y = ", y);
+    </script>
+</body>
+
+</html>
